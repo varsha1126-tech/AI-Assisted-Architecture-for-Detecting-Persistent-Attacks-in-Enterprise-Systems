@@ -1,41 +1,189 @@
-# Sentinel Eye - AI-Assisted Threat Detection
+🛡 Sentinel Eye
+AI-Assisted Architecture for Detecting Persistent Attacks in Enterprise Systems
 
-This is a Next.js application built that provides an AI-assisted end-to-end architecture for detecting persistent threats in enterprise environments.
+Sentinel Eye is an end-to-end AI-powered cybersecurity platform designed to detect persistent and stealthy enterprise threats through intelligent analysis of network traffic and system logs.
 
-## Getting Started
+The system combines modern web architecture with AI-driven anomaly detection to transform raw log data into actionable security intelligence.
 
-To get this project up and running on your local machine, follow the steps below.
+🚀 Overview
 
-### Prerequisites
+Traditional security monitoring systems generate massive volumes of alerts with limited context. Sentinel Eye enhances threat detection by:
 
-*   **Node.js**: Make sure you have Node.js version 20 or later installed. You can download it from [nodejs.org](https://nodejs.org/).
-*   **npm**: This project uses npm for package management, which is included with Node.js.
+Detecting anomalous network behavior
 
-### Setup and Installation
+Identifying suspicious login patterns
 
-1.  **Clone the repository** (if you haven't already).
-2.  **Open in VS Code**: Open the project folder in Visual Studio Code.
-3.  **Install dependencies**: Open a terminal in VS Code (`Terminal` > `New Terminal`) and run the following command to install all the necessary packages:
-    ```bash
-    npm install
-    ```
+Correlating system log events
 
-### Running the Development Servers
+Assigning contextual risk scores
 
-This project requires two separate development servers to be running simultaneously: one for the Next.js frontend and one for the Genkit AI backend.
+Reducing false positives
 
-1.  **Start the Next.js App**: In your first terminal, run:
-    ```bash
-    npm run dev
-    ```
-    This will start the main web application, typically available at [http://localhost:9002](http://localhost:9002).
+Providing explainable threat insights
 
-2.  **Start the Genkit AI Flows**: Open a second terminal in VS Code (you can click the `+` icon in the terminal panel) and run:
-    ```bash
-    npm run genkit:watch
-    ```
-    This starts the Genkit development server, which runs your AI flows. The `--watch` flag ensures that it automatically restarts when you make changes to your AI flow files.
+🏗 Architecture
+🔹 Frontend
 
-### Viewing the Application
+Next.js (React + App Router)
 
-Once both servers are running without errors, you can open your web browser and navigate to [http://localhost:9002](http://localhost:9002) to see the application in action.
+Real-time dashboard
+
+Log upload interface (CSV / JSON)
+
+Threat visualization & risk scoring
+
+🔹 Backend
+
+Firebase
+
+Authentication
+
+Firestore database
+
+Secure cloud storage
+
+App hosting
+
+🔹 AI Layer
+
+Genkit AI Flows
+
+Anomaly detection
+
+Event correlation
+
+Risk classification
+
+Threat explanation engine
+
+🔹 Runtime
+
+Node.js 20+
+
+🔄 How It Works
+
+User uploads network traffic or system log datasets.
+
+Data is securely stored in Firebase Firestore.
+
+Genkit AI processes and extracts behavioral patterns.
+
+The system evaluates:
+
+Unusual port activity
+
+High-volume data transfers
+
+Repeated failed login attempts
+
+Privilege escalation indicators
+
+A risk score is generated:
+
+Normal
+
+Suspicious
+
+Critical
+
+Results are displayed on the dashboard with explanations.
+
+🧠 Core Features
+
+AI-driven anomaly detection
+
+Persistent attack identification
+
+Behavioral log correlation
+
+Risk-based threat classification
+
+Real-time dashboard visualization
+
+Cloud-native scalable architecture
+
+🏢 Use Cases
+
+Security Operations Centers (SOC)
+
+Enterprise IT infrastructure monitoring
+
+Cloud security management
+
+Incident response automation
+
+Threat hunting & investigation
+
+📦 Installation & Setup
+Prerequisites
+
+Node.js 20+
+
+npm
+
+Clone Repository
+git clone https://github.com/your-username/AI-Assisted-Architecture-for-Detecting-Persistent-Attacks-in-Enterprise-Systems.git
+cd AI-Assisted-Architecture-for-Detecting-Persistent-Attacks-in-Enterprise-Systems
+
+Install Dependencies
+npm install
+
+▶ Running the Application
+Start Frontend
+npm run dev
+
+
+Runs on:
+http://localhost:9002
+
+Start Genkit AI Server
+npm run genkit:watch
+
+
+Both services must run simultaneously.
+
+🔐 Security Design Considerations
+
+Secure authentication via Firebase
+
+Controlled access to log data
+
+Isolated AI processing layer
+
+Risk scoring to prioritize alerts
+
+Explainable AI outputs
+
+📊 Future Enhancements
+
+Integration with SIEM tools
+
+Real-time streaming log ingestion
+
+Machine learning-based anomaly detection (Isolation Forest / Autoencoders)
+
+Automated incident response workflows
+
+Cloud deployment with CI/CD pipeline
+
+🛠 Tech Stack
+
+Next.js
+
+React
+
+Firebase (Auth + Firestore + Hosting)
+
+Genkit
+
+Node.js
+
+JavaScript / TypeScript
+
+📌 Project Goal
+
+The goal of Sentinel Eye is to demonstrate how AI can enhance traditional security monitoring by introducing contextual reasoning, anomaly detection, and intelligent prioritization of enterprise threats.
+
+📄 License
+
+This project is intended for educational and research purposes.
