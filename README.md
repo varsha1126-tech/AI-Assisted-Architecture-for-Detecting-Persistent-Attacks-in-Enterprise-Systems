@@ -1,6 +1,6 @@
 # Sentinel Eye - AI-Assisted Threat Detection
 
-This is a Next.js application built with Firebase Studio that provides an AI-assisted end-to-end architecture for detecting persistent threats in enterprise environments.
+This is a Next.js application built that provides an AI-assisted end-to-end architecture for detecting persistent threats in enterprise environments.
 
 ## Getting Started
 
