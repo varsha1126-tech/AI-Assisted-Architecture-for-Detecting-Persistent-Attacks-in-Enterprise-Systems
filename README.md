@@ -1,82 +1,48 @@
 🛡 Sentinel Eye
-AI-Assisted Architecture for Detecting Persistent Attacks in Enterprise Systems
+AI-Assisted Threat Detection for Enterprise Systems
 
-Sentinel Eye is an end-to-end AI-powered cybersecurity platform designed to detect persistent and stealthy enterprise threats through intelligent analysis of network traffic and system logs.
+Sentinel Eye is an AI-powered cybersecurity platform designed to detect persistent and stealthy enterprise threats by analyzing network traffic and system logs. The system combines modern web architecture with AI-driven anomaly detection to transform raw security data into actionable intelligence.
 
-The system combines modern web architecture with AI-driven anomaly detection to transform raw log data into actionable security intelligence.
+📖 Project Concept
 
-🚀 Overview
+Traditional rule-based security systems often generate high volumes of alerts without context, making it difficult to identify Advanced Persistent Threats (APTs). Sentinel Eye improves detection by:
 
-Traditional security monitoring systems generate massive volumes of alerts with limited context. Sentinel Eye enhances threat detection by:
+Identifying behavioral anomalies
 
-Detecting anomalous network behavior
-
-Identifying suspicious login patterns
-
-Correlating system log events
+Correlating suspicious events
 
 Assigning contextual risk scores
-
-Reducing false positives
 
 Providing explainable threat insights
 
 🏗 Architecture
-🔹 Frontend
+User → Next.js Frontend → Firebase Backend → Genkit AI Engine → Risk Scoring → Dashboard Alerts
 
-Next.js (React + App Router)
+Components:
 
-Real-time dashboard
+Frontend: Next.js (React) dashboard for log upload and visualization
 
-Log upload interface (CSV / JSON)
+Backend: Firebase (Authentication + Firestore + Hosting)
 
-Threat visualization & risk scoring
+AI Layer: Genkit for anomaly detection and threat classification
 
-🔹 Backend
-
-Firebase
-
-Authentication
-
-Firestore database
-
-Secure cloud storage
-
-App hosting
-
-🔹 AI Layer
-
-Genkit AI Flows
-
-Anomaly detection
-
-Event correlation
-
-Risk classification
-
-Threat explanation engine
-
-🔹 Runtime
-
-Node.js 20+
+Runtime: Node.js 20+
 
 🔄 How It Works
 
-User uploads network traffic or system log datasets.
+User uploads network or system logs.
 
-Data is securely stored in Firebase Firestore.
+Data is securely stored in Firebase.
 
-Genkit AI processes and extracts behavioral patterns.
+Genkit analyzes patterns such as:
 
-The system evaluates:
+Unusual port usage
 
-Unusual port activity
+Repeated failed logins
 
-High-volume data transfers
+High data transfer spikes
 
-Repeated failed login attempts
-
-Privilege escalation indicators
+Privilege escalation attempts
 
 A risk score is generated:
 
@@ -88,102 +54,6 @@ Critical
 
 Results are displayed on the dashboard with explanations.
 
-🧠 Core Features
+🎯 Goal
 
-AI-driven anomaly detection
-
-Persistent attack identification
-
-Behavioral log correlation
-
-Risk-based threat classification
-
-Real-time dashboard visualization
-
-Cloud-native scalable architecture
-
-🏢 Use Cases
-
-Security Operations Centers (SOC)
-
-Enterprise IT infrastructure monitoring
-
-Cloud security management
-
-Incident response automation
-
-Threat hunting & investigation
-
-📦 Installation & Setup
-Prerequisites
-
-Node.js 20+
-
-npm
-
-Clone Repository
-git clone https://github.com/your-username/AI-Assisted-Architecture-for-Detecting-Persistent-Attacks-in-Enterprise-Systems.git
-cd AI-Assisted-Architecture-for-Detecting-Persistent-Attacks-in-Enterprise-Systems
-
-Install Dependencies
-npm install
-
-▶ Running the Application
-Start Frontend
-npm run dev
-
-
-Runs on:
-http://localhost:9002
-
-Start Genkit AI Server
-npm run genkit:watch
-
-
-Both services must run simultaneously.
-
-🔐 Security Design Considerations
-
-Secure authentication via Firebase
-
-Controlled access to log data
-
-Isolated AI processing layer
-
-Risk scoring to prioritize alerts
-
-Explainable AI outputs
-
-📊 Future Enhancements
-
-Integration with SIEM tools
-
-Real-time streaming log ingestion
-
-Machine learning-based anomaly detection (Isolation Forest / Autoencoders)
-
-Automated incident response workflows
-
-Cloud deployment with CI/CD pipeline
-
-🛠 Tech Stack
-
-Next.js
-
-React
-
-Firebase (Auth + Firestore + Hosting)
-
-Genkit
-
-Node.js
-
-JavaScript / TypeScript
-
-📌 Project Goal
-
-The goal of Sentinel Eye is to demonstrate how AI can enhance traditional security monitoring by introducing contextual reasoning, anomaly detection, and intelligent prioritization of enterprise threats.
-
-📄 License
-
-This project is intended for educational and research purposes.
+To demonstrate how AI can enhance enterprise cybersecurity systems by enabling intelligent anomaly detection, event correlation, and risk-based threat prioritization.
